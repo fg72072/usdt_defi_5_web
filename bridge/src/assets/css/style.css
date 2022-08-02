@@ -1,0 +1,303 @@
+:root {
+    --white: #FFF;
+    --primary: #1e426c;
+    --secondary: #f1754b;
+    --gray: #3C3C3C;
+}
+
+body {
+    background-color: #052d5c;
+    font-family: Avenir,PingFang SC,Helvetica Neue,Helvetica,Hiragino Sans GB,Arial,sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f4f7;
+    border-radius: 5px
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f51b5;
+    border-radius: 5px
+}
+main{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum","tnum";
+    display: flex;
+}
+.section{
+    margin-top: 7rem !important;
+    width: 80%;
+    margin: auto;
+}
+.btn-tabs{
+    display: flex;
+}
+.btn-tabs a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 158px;
+    line-height: 60px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 16px;
+    font-family: Futura-Medium;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.1) !important;
+}
+.btn-tabs a span{
+    margin-left: 0.5rem;
+}
+.btn-tabs a.active{
+    background-color: var(--white);
+    color: var(--primary);
+}
+.btn-tabs a:nth-child(1){
+    border-top-left-radius: 24px;
+}
+.btn-tabs a:nth-child(2){
+    border-top-right-radius: 24px;
+}
+.main-box{
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    background-color: var(--white);
+    display: flex;
+    overflow: hidden;
+}
+.main-box .inner-one{
+    padding: 3rem 3rem;
+    width: 316px;
+}
+.main-box .inner-two{
+    padding: 3rem 3rem;
+    background-color: var(--white);
+    width: 100%;
+}
+.main-box .shadow {
+    width: 10px;
+    box-shadow: -7px 0 10px 0 rgb(5 45 92 / 15%);
+}
+.select-coin{
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 1rem;
+}
+.icon-modal-btn{
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+.icon-modal-btn span{
+    margin-right: 0.8rem;
+}
+.select-coin .coin{
+    width: 40px;
+    margin-right: 0.8rem;
+}
+.select-coin .name{
+    font-weight: 500;
+    font-size: 18px;
+}
+.gray-text{
+    color: var(--gray);
+}
+.secondary-text{
+    color: var(--secondary);
+}
+.first-coin-dropdown{
+    margin-top: 4rem;
+}
+.coin-dropdown .coin-dropdown-btn{
+    background: #f1f4f7;
+    border: 3px solid #e2e9f0!important;
+    height: 100%!important;
+    align-items: center;
+    border-radius: 16px!important;
+    padding: 1.3rem 20px!important;
+    box-shadow: none!important;
+    color: var(--gray) !important;
+    width: 225px;
+}
+.coin-dropdown .coin-dropdown-btn::after{
+    display: none !important;
+}
+.coin-dropdown .coin-dropdown-btn i{
+    margin-left: 2rem;
+}
+.coin-dropdown .dropdown-menu{
+    width: 225px;
+    border-radius: 16px!important;
+    padding: 1rem 1rem;
+}
+.coin-dropdown .dropdown-item{
+    padding: 1rem 1rem;
+    border-radius: 16px!important;
+}
+.coin-dropdown .dropdown-item img{
+    width: 35px;
+    margin-right: 0.5rem;
+}
+.swap-btn{
+    width: 225px;
+    margin: 1rem 0;
+}
+.swap-btn img{
+    cursor: pointer;
+}
+.custom-form .form-group{
+    margin-top: 2rem;
+}
+.custom-form label{
+    color: var(--primary);
+    font-size: 20px;
+}
+.custom-form .input-box{
+    border-bottom: 1px solid #eee;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+}
+.custom-form .input-box input{
+    border: none;
+    width: 100% !important;
+    text-align: right;
+    font-size: 18px;
+
+}
+.custom-form .input-box input:focus{
+    outline: none;
+}
+.primary-text{
+    color: var(--primary);
+}
+.zero{
+    font-size: 20px;
+    color: var(--primary);
+
+}
+.max-btn{
+    height: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 0 6px;
+    border-radius: 10px;
+    border: none;
+    color: #052d5c;
+    background: #f1f4f7;
+    font-family: DINPro-Medium;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+}
+.secondary-btn{
+    background-color: var(--secondary);
+    color: var(--white);
+}
+.no-data-message{
+    height: 500px;
+    text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+    color: var(--gray);
+}
+.icon-message{
+    font-size: 50px;
+}
+.modal-content{
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 1rem 1.5rem;
+}
+.modal-header{
+    border: none;
+}
+.modal-title{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #1e1e1e !important;
+    font-weight: 500;
+}
+.search-box{
+    height: 50px;
+    border-radius: 35px;
+    padding: 1rem 1rem;
+    background-color: #f1f4f7;
+    border: 1px solid rgba(4,51,103,.2);
+    color: #000;
+    font-size: 18px;
+}
+.coins-head{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+.coins-head li{
+    display: inline-block;
+    border: 1px solid rgba(4,51,103,.2);
+    border-radius: 35px;
+    padding: 2px 16px;
+    margin: 0 10px 6px 0;
+    font-size: 14px;
+    color: #1e1e1e;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+.coins-list-main{
+    height: 400px;
+    overflow: auto;
+}
+.coins-list-main .coins{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+.coins-list-main .coins li{
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    border-bottom: 1px solid #f6f6f6;
+}
+.coins-list-main .coins li:hover{
+    cursor: pointer;
+    background-color: #f1f4f7;
+    border-radius: 16px;
+    border-bottom: 1px solid #f1f4f7;
+}
+.coins-list-main .coins li img{
+    width: 40px;
+}
+.coins-list-main .coins li span{
+    margin-left: 1rem;
+    font-weight: 600;
+}

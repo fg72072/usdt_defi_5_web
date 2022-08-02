@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1080px" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>背景</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1920" height="1080"></rect>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" id="radialGradient-3">
+            <stop stop-color="#5882DF" offset="0%"></stop>
+            <stop stop-color="#5DD7EB" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-13.4%" y="-13.4%" width="126.9%" height="126.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" id="radialGradient-5">
+            <stop stop-color="#5B86E5" offset="0%"></stop>
+            <stop stop-color="#F05FD2" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-22.1%" y="-22.1%" width="144.1%" height="144.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" id="radialGradient-7">
+            <stop stop-color="#5B86E5" offset="0%"></stop>
+            <stop stop-color="#F05F5F" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-22.1%" y="-22.1%" width="144.1%" height="144.1%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="背景">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="渐变背景" fill="#0A0F1A" xlink:href="#path-1"></use>
+            <circle id="椭圆形" fill="url(#radialGradient-3)" opacity="0.100000001" filter="url(#filter-4)" mask="url(#mask-2)" cx="0" cy="0" r="558"></circle>
+            <circle id="椭圆形备份-2" fill="url(#radialGradient-5)" opacity="0.100000001" filter="url(#filter-6)" mask="url(#mask-2)" cx="1920" cy="530" r="340"></circle>
+            <circle id="椭圆形备份-3" fill="url(#radialGradient-7)" opacity="0.0951549727" filter="url(#filter-8)" mask="url(#mask-2)" cx="639" cy="1239" r="340"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,302 @@
+:root {
+    --white: #FFF;
+    --primary:#e6007a;
+    --secondary: #3139FD;
+    --gray: #3C3C3C;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size: 1rem;
+    color: #1e1e1e;
+    letter-spacing: -0.02rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.dropdown-menu{
+    border: none;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+    border-radius: 1.5rem;
+    min-width: 11rem;
+}
+.dropdown-menu .dropdown-item:hover{
+    background: none !important;
+    color: var(--primary);
+}
+.custom-container{
+    padding: 0 4rem;
+}
+.banner-section{
+   margin-top: 7rem;
+}
+.banner-section h1{
+    font-weight: 700 !important;
+    font-size: 4rem;
+}
+.banner-intro{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+.banner-bg{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.banner-bg .banner-img{
+    width: 400px;
+    transition: all 0.5s ease;
+}
+.banner-bg .outer-img{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    transition: all 0.5s ease;
+
+}
+.custom-btn{
+    border-radius: 2rem;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.banner-btn-group{
+    display: flex;
+    margin-top: 2rem;
+}
+.banner-btn-group .primary-btn:not(:first-child){
+    margin-left: 1rem;
+}
+.primary-btn{
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: solid 1px var(--primary);
+    transition: all 0.2s ease, border 1ms ease;
+    will-change: transform;
+    transform: scale(0.999);
+}
+.primary-btn:hover{
+    background: none;
+    color: #fff;
+    will-change: transform;
+    transform: scale(1.05);
+    border: solid 1px transparent;
+}
+.primary-btn::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--primary);
+    transition: all 0.2s ease;
+    will-change: transform;
+    color: transparent;
+    z-index: -1;
+    
+}
+.primary-btn:hover:before{
+    left: 0;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+.section{
+    margin-top: 6rem;
+}
+.custom-card img{
+    width: auto;
+    height: 3rem;
+}
+.custom-card .title{
+    font-weight: 700 !important;
+    font-size: 2rem;
+    color: #1e1e1e;
+    letter-spacing: -0.04em;
+    margin-bottom: 0.75rem !important;
+    margin-top: 0.75rem !important;
+}
+.custom-card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+.section-footer{
+    text-align: center;
+    margin-top: 4rem;
+}
+.section-title{
+    color: #1e1e1e;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.section-footer .section-title{
+    margin-bottom: 2rem;
+}
+.f-700{
+    font-weight: 700;
+}
+.black-bg-section{
+    background: #172026 !important;
+    padding: 6rem 0;
+}
+.sub-heading{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.custom-card-2{
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+.custom-card-2 img{
+    width: 220px;
+    border-radius: calc(0.375rem - 0px);
+    height: auto;
+    min-height: 1px;
+}
+.custom-card-2 .title{
+    color: #fff !important;
+    font-weight: 700 !important;
+    margin: 0.8rem 0;
+}
+.custom-card-2 p{
+    color: #fff !important;
+    font-size: 17px;
+}
+.primary-section{
+    background-color: var(--primary) !important;
+    padding: 6rem 0;
+}
+.protocol-title{
+    font-size: 45px;
+}
+.protocol-desc{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--white);
+}
+.normal-anchor{
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid;
+    transition: all 0.3s ease;
+
+}
+.normal-anchor:hover{
+    color: var(--white);
+    padding-bottom: 0.2rem;
+}
+.protocol-tooltip{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.custom-tooltip{
+    position: relative;
+    z-index: 99;
+    width: 150px;
+    text-align: center;
+}
+.custom-tooltip:hover>.inner-text{
+    display: inline;
+}
+.custom-tooltip .inner-text{
+    display: none;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 9;
+    background-color: black;
+    color: var(--white);
+    font-size: 14px;
+    padding: 0.3rem;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.protocol-tooltip img{
+    width: 100px;
+    margin-top: 2rem;
+}
+.section-image{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.section-image img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.section-image-text{
+    font-weight: 700 !important;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+    font-size: 3.5rem;
+    color: var(--white);
+}
+.section-image .custom-btn{
+    margin-top: 4rem;
+}
+.blog-main{
+    margin-top: 5rem;
+}
+
+.card{
+    box-shadow: 0 0.1rem 0.3rem rgb(52 58 64 / 15%) !important;
+    border: 1px solid #e9ecef !important;
+}
+.card-body{
+    padding: 1rem 1.5rem;
+
+}
+.card-title{
+    color: var(--primary);
+}
+.card-intro{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0.7rem 0;
+}
+.card-footer{
+    background: #fff;
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+}
+.author{
+    display: flex;
+    align-items: center;
+}
+.author img{
+    flex-shrink: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+.primary-anchor{
+    text-decoration: none;
+    color: #172026;
+    border-bottom: 1px solid var(--primary);
+    transition: all 0.3s ease;
+
+}
+.primary-anchor:hover{
+    padding-bottom: 0.3rem;
+    color: #172026;
+}

@@ -1,0 +1,94 @@
+.custom-header{
+    padding: 0 4rem;
+}
+.custom-header-2,header .top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.custom-header-2 .logo-section{
+    width: 200px;
+}
+header .top-header{
+    background-color: #fff !important;
+    border-bottom: 1px solid #e9ecef !important;
+    padding: 1rem 0;
+}
+header .top-header .links{
+    display: flex;
+    align-items: center;
+}
+header .top-header .links ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+header .top-header .links ul li{
+margin: 0 0.7rem;
+}
+header .top-header .links ul li a{
+    color: #1e1e1e;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    text-decoration: none;
+}
+header .custom-dropdown .dropdown-toggle{
+    background-color: transparent;
+    color: #1e1e1e;
+    border: none !important;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0;
+}
+header .custom-dropdown .dropdown-toggle:focus{
+    border: none !important;
+    outline: none;
+    box-shadow: none;
+}
+.social-links li a{
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 40px;
+    font-size: 16px;
+
+}
+.social-links li .button-support{
+    border: 1px solid #1e1e1e;
+    height: auto !important;
+    width: auto !important;
+    font-size: 16px;
+    padding: 4px 15px;
+    border-radius: 1.5rem !important;
+}
+.custom-header-2{
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 1rem 4rem;
+    background-color: var(--white);
+}
+.custom-header-2 .nav-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.custom-header-2 .nav-links li{
+    padding: 0 1rem;
+}
+.custom-header-2 .nav-links li a{
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 16px !important;
+    font-weight: 600;
+}
