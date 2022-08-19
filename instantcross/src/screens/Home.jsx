@@ -1,5 +1,5 @@
-import React from "react";
-import { Header, Footer } from "../components/index";
+import React, { useState } from "react";
+import { Header, Footer, CoinModal, ChainModal } from "../components/index";
 import { Container, Row, Col, Dropdown, Tab, Tabs } from "react-bootstrap";
 import {
   ChainImg,
@@ -9,18 +9,22 @@ import {
   Trademark,
   EmptyData,
   About,
+  bnb,
+  ethscan,
+  bscscan,
+  matic,
 } from "../components/images";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
-export function HomeBox() {
+export function HomeBox(props) {
   return (
     <div className="box">
       <div className="chain-selection">
-        <div className="chain-info">
+        <div className="chain-info" onClick={props.handleShow}>
           <img src={ChainImg} alt="chain-img" className="chain-img" />
           <div>
-            <p className="chain-select-text">Select</p>
+            <p className="chain-select-text">Choose</p>
           </div>
         </div>
       </div>
@@ -36,14 +40,26 @@ export function HomeBox() {
                 <Dropdown.Toggle
                   className="dropdown-btn"
                   id="dropdown-basic"
-                ></Dropdown.Toggle>
+                  onClick={props.handleShow2}></Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  <div className="empty-data d-flex flex-column align-items-center ">
+                {/* <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">
+                <img src={ethscan}/>
+                <span>ETH</span>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-2">
+                <img src={bscscan}/>
+                <span>BSC</span>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-2">
+                <img src={matic}/>
+                <span>Polygon</span>
+                </Dropdown.Item>
+                  <div className="empty-data">
                     <img src={EmptyData} alt="emptydata.png" />
                     <span>No Data</span>
                   </div>
-                </Dropdown.Menu>
+                </Dropdown.Menu> */}
               </Dropdown>
             </div>
           </div>
@@ -56,15 +72,27 @@ export function HomeBox() {
               <Dropdown className="custom-dropdown">
                 <Dropdown.Toggle
                   className="dropdown-btn"
-                  id="dropdown-basic"
-                ></Dropdown.Toggle>
-
+                  id="dropdown"
+                onClick={props.handleShow2}></Dropdown.Toggle>
+{/* 
                 <Dropdown.Menu>
-                  <div className="empty-data d-flex flex-column align-items-center ">
+                <Dropdown.Item href="#/action-1">
+                <img src={ethscan}/>
+                <span>ETH</span>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-2">
+                <img src={bscscan}/>
+                <span>BSC</span>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-2">
+                <img src={matic}/>
+                <span>Polygon</span>
+                </Dropdown.Item>
+                  <div className="empty-data">
                     <img src={EmptyData} alt="emptydata.png" />
                     <span>No Data</span>
                   </div>
-                </Dropdown.Menu>
+                </Dropdown.Menu> */}
               </Dropdown>
             </div>
           </div>
@@ -88,7 +116,7 @@ export function HomeBox() {
                 <input type="text" />
               </div>
               <div>
-                <OverlayTrigger
+                {/* <OverlayTrigger
                   placement={"top"}
                   overlay={
                     <Tooltip id={`tooltip-top`}>
@@ -99,7 +127,9 @@ export function HomeBox() {
                   }
                 >
                   <img src={About} alt="about.png" className="about-icon" />
-                </OverlayTrigger>
+                </OverlayTrigger> */}
+                <img src={About} alt="about.png" className="about-icon" />
+
               </div>
             </div>
           </div>
@@ -110,7 +140,7 @@ export function HomeBox() {
                 <span>Fee:</span>
               </div>
               <div>
-                <OverlayTrigger
+                {/* <OverlayTrigger
                   placement="top"
                   overlay={
                     <Tooltip id="tooltip-top">
@@ -124,7 +154,9 @@ export function HomeBox() {
                   }
                 >
                   <img src={About} alt="about.png" className="about-icon" />
-                </OverlayTrigger>
+                </OverlayTrigger> */}
+                <img src={About} alt="about.png" className="about-icon" />
+
               </div>
             </div>
           </div>
@@ -148,6 +180,15 @@ export function HomeBox() {
 }
 
 function Home() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const [show2, setShow2] = useState(false);
+
+  const handleClose2 = () => setShow2(false);
+  const handleShow2 = () => setShow2(true);
   return (
     <div>
       <div className="bg-img-main">
@@ -161,14 +202,15 @@ function Home() {
             <Row>
               <Col lg={12}>
                 <div className="main">
-                  <HomeBox />
+                  <HomeBox handleShow={handleShow} handleShow2={handleShow2}/>
                 </div>
               </Col>
             </Row>
           </div>
         </div>
       </section>
-
+      <CoinModal show={show} handleClose={handleClose}/>
+      <ChainModal show={show2} handleClose={handleClose2}/>
       <Footer />
     </div>
   );

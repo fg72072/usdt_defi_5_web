@@ -8,6 +8,10 @@
     display: flex;
     align-items: center;
 }
+.logo-section img{
+    width: 200px;
+    /* height: 50px; */
+}
 .logo-section .version-control{
     margin-left: 1rem;
 }
@@ -20,12 +24,15 @@
     list-style: none;
     margin: 0;
 }
-
+.custom-nav-link .links-ul li .link img{
+    width: 25px;
+    height: 25px;
+}
 .custom-nav-link .links-ul li .link{
     margin-left: 6px!important;
     background: #fcfcfc;
     border-radius: 20px;
-    padding: 0.2rem 0.9rem 0.2rem 0.3rem;
+    padding: 0.2rem 0.9rem 0.2rem 0.9rem;
     text-align: left;
     display: flex;
     align-items: center;
@@ -40,11 +47,12 @@ opacity: 0.9;
 margin-left: 0.5rem;
 }
 .blue-link{
-    background-color: #0071bc !important;
+    background-color: #27a17c !important;
     color: var(--white) !important;
 }
 .yellow-link{
     background-color: var(--primary) !important;
+    color: white !important;
 }
 .round-btn{
     justify-content: center !important;

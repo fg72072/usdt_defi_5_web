@@ -12,7 +12,11 @@ import circle from '../assets/images/circle.png'
 import arrowdownblue from '../assets/images/arrow-down-blue.svg'
 import arrowdownwhite from '../assets/images/arrow-down-white.png'
 import arrowupwhite from '../assets/images/arrow-up-white.png'
-import wan from '../assets/images/wan.png'
+import usdt from '../assets/images/usdt.png'
+import bnb from '../assets/images/bnb.png'
+import eth from '../assets/images/eth.png'
+import matic from '../assets/images/matic.png'
+
 
 
 export{
@@ -30,5 +34,8 @@ export{
     arrowdownblue,
     arrowdownwhite,
     arrowupwhite,
-    wan
+    usdt,
+    bnb,
+    eth,
+    matic
 }

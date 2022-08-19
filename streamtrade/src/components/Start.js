@@ -10,7 +10,7 @@ function Start(props) {
 
       <Modal show={props.show} onHide={props.handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>{'WAN->wanUSDT'}</Modal.Title>
+          <Modal.Title>{'USDTd->USDTd'}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <div className='input-box secondary-input-box'>

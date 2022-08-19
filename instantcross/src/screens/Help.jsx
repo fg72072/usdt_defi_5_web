@@ -71,8 +71,8 @@ export function HelpBox() {
         </div>
         <p>
           If you have any questions, please email{" "}
-          <a href="mailto:support@instantcross.finance">
-            support@instantcross.finance
+          <a href="mailto:cross@usdt-defi.io">
+            cross@usdt-defi.io
           </a>
         </p>
       </div>

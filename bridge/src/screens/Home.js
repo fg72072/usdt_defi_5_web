@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container,Dropdown } from "react-bootstrap"
 import { Coins, Tabs } from "../components"
-import { addr, eth, okc, swap, wan } from "../components/Images"
+import { addr, bscscan, eth, ethscan, matic, okc, swap, usdt, wan } from "../components/Images"
 
 function Home()
 {
@@ -18,8 +18,8 @@ function Home()
                 <div className="inner-one">
                     <div className="select-coin">
                         <div className="d-flex align-items-center">
-                            <img src={wan} className="coin"/>
-                            <span className="name">WAN</span>
+                            <img src={usdt} className="coin"/>
+                            <span className="name">USDTd</span>
                         </div>
                         <div className="icon-modal-btn" onClick={handleShow}>
                             <span className="gray-text">Asset</span>
@@ -33,8 +33,9 @@ function Home()
                             <i class="fa-solid fa-caret-down"></i>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1"><img src={eth}/><span>Ethereum</span></Dropdown.Item>
-                            <Dropdown.Item href="#/action-1"><img src={okc}/><span>OKC</span></Dropdown.Item>
+                            <Dropdown.Item href="#/action-1"><img src={ethscan}/><span>ETH</span></Dropdown.Item>
+                            <Dropdown.Item href="#/action-1"><img src={bscscan}/><span>BSC</span></Dropdown.Item>
+                            <Dropdown.Item href="#/action-1"><img src={matic}/><span>Polygon</span></Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
                     </div>
@@ -48,8 +49,9 @@ function Home()
                             <i class="fa-solid fa-caret-down"></i>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1"><img src={eth}/><span>Ethereum</span></Dropdown.Item>
-                            <Dropdown.Item href="#/action-1"><img src={okc}/><span>OKC</span></Dropdown.Item>
+                            <Dropdown.Item href="#/action-1"><img src={ethscan}/><span>ETH</span></Dropdown.Item>
+                            <Dropdown.Item href="#/action-1"><img src={bscscan}/><span>BSC</span></Dropdown.Item>
+                            <Dropdown.Item href="#/action-1"><img src={matic}/><span>POLYGON</span></Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
                     </div>

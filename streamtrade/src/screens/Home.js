@@ -1,23 +1,23 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap"
 import { CoinsTable } from "../components"
-import { done, DOT, light, stream, WAN, wanBTC, WAND, wanDOGE, wanETH, wanLTC, wanUSDC, wanUSDT, wanXRP, WASP, ZOO } from "../components/Images"
+import { bnb, done, DOT, eth, light, matic, stream, usdt, WAN, wanBTC, WAND, wanDOGE, wanETH, wanLTC, wanUSDC, wanUSDT, wanXRP, WASP, ZOO } from "../components/Images"
 
 function Home() {
   
     return <section className="section">
         <Container fluid className="custom-container">
             <div className="box">
-                <h3 className="section-title">Stream Trade</h3>
-                <p className="normal-text">Stream Trade helps users automatically buy and sell cryptocurrencies evenly over time. This enables advanced strategies including but not limited to dollar-cost averaging.</p>
+                <h3 className="section-title">USDT- Defi Auto</h3>
+                <p className="normal-text">USDT- Defi Auto helps users automatically buy and sell cryptocurrencies evenly over time. This enables advanced strategies including but not limited to dollar-cost averaging.</p>
                 <div className="first-section-footer">
                     <div className="inner">
                         <img src={stream} />
-                        <span className="normal-text-sm">24x7 Stream Service</span>
+                        <span className="normal-text-sm">24x7 Auto Service</span>
                     </div>
                     <div className="inner">
                         <img src={light} />
-                        <span className="normal-text-sm">Flexible Stream Cycle</span>
+                        <span className="normal-text-sm">Custom Auto Cycles</span>
                     </div>
                     <div className="inner">
                         <img src={done} />
@@ -28,72 +28,27 @@ function Home() {
                     <span className="normal-text-sm">Current Supported Tokens</span>
                     <ul className="icon-list">
                         <li>
-                            <img src={WAN} />
-                        </li>
-                        <li>
-                            <img src={WASP} />
+                            <img src={usdt} />
                             <div className="inner-text">
-                                Add WASP to MetaMask
+                                Add USDTd to MetaMask
                             </div>
                         </li>
                         <li>
-                            <img src={WAND} />
+                            <img src={bnb} />
                             <div className="inner-text">
-                                Add WAND to MetaMask
+                                Add BNB to MetaMask
                             </div>
                         </li>
                         <li>
-                            <img src={wanUSDT} />
+                            <img src={eth} />
                             <div className="inner-text">
-                                Add wanUSDT to MetaMask
+                                Add ETH to MetaMask
                             </div>
                         </li>
                         <li>
-                            <img src={ZOO} />
+                            <img src={matic} />
                             <div className="inner-text">
-                                Add ZOO to MetaMask
-                            </div>
-                        </li>
-                        <li>
-                            <img src={wanLTC} />
-                            <div className="inner-text">
-                                Add wanLTC to MetaMask
-                            </div>
-                        </li>
-                        <li>
-                            <img src={wanXRP} />
-                            <div className="inner-text">
-                                Add wanXRP to MetaMask
-                            </div>
-                        </li>
-                        <li>
-                            <img src={DOT} />
-                            <div className="inner-text">
-                                Add DOT to MetaMask
-                            </div>
-                        </li>
-                        <li>
-                            <img src={wanDOGE} />
-                            <div className="inner-text">
-                                Add wanDOGE to MetaMask
-                            </div>
-                        </li>
-                        <li>
-                            <img src={wanUSDC} />
-                            <div className="inner-text">
-                                Add wanUSDC to MetaMask
-                            </div>
-                        </li>
-                        <li>
-                            <img src={wanETH} />
-                            <div className="inner-text">
-                                Add wanETH to MetaMask
-                            </div>
-                        </li>
-                        <li>
-                            <img src={wanBTC} />
-                            <div className="inner-text">
-                                Add wanBTC to MetaMask
+                                Add Matic to MetaMask
                             </div>
                         </li>
                     </ul>

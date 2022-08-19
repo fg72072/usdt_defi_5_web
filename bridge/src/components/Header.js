@@ -51,36 +51,10 @@ const onboard = Onboard({
         preferred: true,
       },
       {
-        walletName: "trust",
-        preferred: true,
-      },
- 
-      {
         walletName: 'walletConnect',
         preferred: true,
         infuraKey: INFURA_ID,
         bridge: 'https://bridge.walletconnect.org',
-      },
-      {
-        walletName: 'torus',
-      },
-      {
-        walletName: 'tally',
-      },
-      {
-        walletName: 'status',
-      },
-      {
-        walletName: 'alphawallet',
-      },
-      {
-        walletName: 'atoken',
-      },
-      {
-        walletName: 'blockwallet',
-      },
-      {
-        walletName: 'coinbase',
       }
     ]
   }
@@ -99,7 +73,7 @@ loadProvider();
         </div>
         <div className='flex-btn-group'>
             <button className='wallet-btn' onClick={connectWalletPressed}>Connect to Wallet</button>
-            <button className='guide-btn'><img src={guide}/><span>Guide</span></button>
+            <button className='guide-btn'><img src={guide}/><span>Docs</span></button>
         </div>
     </header>
 }

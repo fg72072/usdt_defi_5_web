@@ -5,7 +5,7 @@ function Footer()
     return <>
     <footer>
        <Container fluid className="custom-container">
-            <p>CopyRight © 2021 WanLend. All Rights Reserved.</p>
+            <p>CopyRight © 2022 LENDMARKET. All Rights Reserved.</p>
         </Container>
     </footer>
     </>

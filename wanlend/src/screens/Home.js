@@ -1,5 +1,5 @@
 import { Row,Col,Container } from "react-bootstrap"
-import { arrowdown, arrowdownblue, arrowdownwhite, arrowup, arrowupwhite, circle, wan } from "../components/Images"
+import { arrowdown, arrowdownblue, arrowdownwhite, arrowup, arrowupwhite, bnb, circle, eth, matic, usdt } from "../components/Images"
 import { useEffect, useState } from "react"
 import $ from 'jquery'
 function Home()
@@ -52,7 +52,7 @@ function Home()
                     <div class="ant-switch-handle"></div>
                     <span class="ant-switch-inner"></span>
                 </button>
-                <p className="text-white mt-1">APR {toggle ? "With" : "Without"} WAND</p>
+                <p className=" mt-1">APR {toggle ? "With" : "Without"} USDTd</p>
             </div>
         </section>
         <section className="section">
@@ -97,30 +97,111 @@ function Home()
                                 </tr>
                             </thead>
                             <tbody>
+                               <tr>
+                                <td>
+                                        <div className="icon-flex">
+                                        <img src={usdt}/>
+                                        <span>USDTd</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="green-text">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span>4.88%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span className="d-block">0</span>
+                                        <span className="d-block">USDTd</span>
+                                    </td>
+                                    <td>
+                                    <button type="button"  role="switch" aria-checked="true" className="ant-switch  ant-switch-small switchStyle___1cfxp gray-bg" ant-click-animating="false">
+                                        <div class="ant-switch-handle"></div>
+                                        <span class="ant-switch-inner"></span>
+                                    </button>
+                                    <br/>
+                                    <span>60%</span>
+                                    </td>
+                               </tr>
+                               <tr>
+                                <td>
+                                        <div className="icon-flex">
+                                        <img src={eth}/>
+                                        <span>ETH</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="green-text">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span>4.88%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span className="d-block">0</span>
+                                        <span className="d-block">ETH</span>
+                                    </td>
+                                    <td>
+                                    <button type="button"  role="switch" aria-checked="true" className="ant-switch  ant-switch-small switchStyle___1cfxp gray-bg" ant-click-animating="false">
+                                        <div class="ant-switch-handle"></div>
+                                        <span class="ant-switch-inner"></span>
+                                    </button>
+                                    <br/>
+                                    <span>60%</span>
+                                    </td>
+                               </tr>
+                               <tr>
                                 <td>
                                     <div className="icon-flex">
-                                    <img src={wan}/>
-                                    <span>WAN</span>
-                                    </div>
-                                </td>
+                                        <img src={bnb}/>
+                                        <span>BNB</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="green-text">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span>4.88%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span className="d-block">0</span>
+                                        <span className="d-block">BNB</span>
+                                    </td>
+                                    <td>
+                                    <button type="button"  role="switch" aria-checked="true" className="ant-switch  ant-switch-small switchStyle___1cfxp gray-bg" ant-click-animating="false">
+                                        <div class="ant-switch-handle"></div>
+                                        <span class="ant-switch-inner"></span>
+                                    </button>
+                                    <br/>
+                                    <span>60%</span>
+                                    </td>
+                               </tr>
+                               <tr>
                                 <td>
-                                    <div className="green-text">
-                                        <i class="fa-solid fa-arrow-up"></i>
-                                        <span>4.88%</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <span className="d-block">0</span>
-                                    <span className="d-block">WAN</span>
-                                </td>
-                                <td>
-                                <button type="button"  role="switch" aria-checked="true" className="ant-switch  ant-switch-small switchStyle___1cfxp gray-bg" ant-click-animating="false">
-                                    <div class="ant-switch-handle"></div>
-                                    <span class="ant-switch-inner"></span>
-                                </button>
-                                <br/>
-                                <span>60%</span>
-                                </td>
+                                        <div className="icon-flex">
+                                        <img src={matic}/>
+                                        <span>Matic</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="green-text">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span>4.88%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span className="d-block">0</span>
+                                        <span className="d-block">Matic</span>
+                                    </td>
+                                    <td>
+                                    <button type="button"  role="switch" aria-checked="true" className="ant-switch  ant-switch-small switchStyle___1cfxp gray-bg" ant-click-animating="false">
+                                        <div class="ant-switch-handle"></div>
+                                        <span class="ant-switch-inner"></span>
+                                    </button>
+                                    <br/>
+                                    <span>60%</span>
+                                    </td>
+                               </tr>
+
                             </tbody>
                         </table>
                     </div>
@@ -142,41 +223,101 @@ function Home()
                                     Asset
                                     </th>
                                     <th>
-                                    Supply APR
+                                    Borrow Cost
                                     </th>
                                     <th>
                                     Wallet
                                     </th>
                                     <th>
-                                    Collateral/Factor
+                                    Liquidity
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <tr>
+                                <td>
+                                        <div className="icon-flex">
+                                        <img src={usdt}/>
+                                        <span>USDTd</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="green-text">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span>4.88%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span className="d-block">0</span>
+                                        <span className="d-block">USDTd</span>
+                                    </td>
+                                    <td>
+                                    ---
+                                    </td>
+                               </tr>
+                               <tr>
+                                <td>
+                                        <div className="icon-flex">
+                                        <img src={eth}/>
+                                        <span>ETH</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="green-text">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span>4.88%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span className="d-block">0</span>
+                                        <span className="d-block">ETH</span>
+                                    </td>
+                                    <td>
+                                    ---
+                                    </td>
+                               </tr>
+                               <tr>
                                 <td>
                                     <div className="icon-flex">
-                                    <img src={wan}/>
-                                    <span>WAN</span>
-                                    </div>
-                                </td>
+                                        <img src={bnb}/>
+                                        <span>BNB</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="green-text">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span>4.88%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span className="d-block">0</span>
+                                        <span className="d-block">BNB</span>
+                                    </td>
+                                    <td>
+                                    ---
+                                    </td>
+                               </tr>
+                               <tr>
                                 <td>
-                                    <div className="green-text">
-                                        <i class="fa-solid fa-arrow-up"></i>
-                                        <span>4.88%</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <span className="d-block">0</span>
-                                    <span className="d-block">WAN</span>
-                                </td>
-                                <td>
-                                <button type="button"  role="switch" aria-checked="true" className="ant-switch  ant-switch-small switchStyle___1cfxp gray-bg" ant-click-animating="false">
-                                    <div class="ant-switch-handle"></div>
-                                    <span class="ant-switch-inner"></span>
-                                </button>
-                                <br/>
-                                <span>60%</span>
-                                </td>
+                                        <div className="icon-flex">
+                                        <img src={matic}/>
+                                        <span>Matic</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="green-text">
+                                            <i class="fa-solid fa-arrow-up"></i>
+                                            <span>4.88%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span className="d-block">0</span>
+                                        <span className="d-block">Matic</span>
+                                    </td>
+                                    <td>
+                                    ---
+                                    </td>
+                               </tr>
                             </tbody>
                         </table>
                     </div>

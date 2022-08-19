@@ -9,6 +9,10 @@
     justify-content: space-between;
     font-family: Futura-Medium;
 }
+.logo-section .logo{
+    width: 160px;
+    /* height: 70px; */
+}
 .flex-btn-group{
     display: flex;
     align-items: center;
@@ -16,7 +20,7 @@
 .wallet-btn{
     line-height: 40px;
     height: 40px;
-    background: #f1754b;
+    background: #27a17c;
     border-radius: 20px;
     padding: 0 15px;
     font-size: 16px;
@@ -25,7 +29,7 @@
 }
 .guide-btn{
     line-height: 40px;
-    background: #2fbdf4;
+    background: #27a17c;
     border-radius: 20px;
     border: none;
     padding: 0 15px;

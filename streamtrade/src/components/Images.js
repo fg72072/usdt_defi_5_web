@@ -1,4 +1,4 @@
-import logo from '../assets/images/logo.svg'
+import logo from '../assets/images/logo.png'
 import stream from '../assets/images/stream.png'
 import light from '../assets/images/light.png'
 import done from '../assets/images/done.png'
@@ -16,6 +16,10 @@ import wanETH from '../assets/images/wanETH.png'
 import wanBTC from '../assets/images/wanBTC.png'
 import arrow from '../assets/images/arrow.png'
 import dots from '../assets/images/dots.png'
+import usdt from '../assets/images/usdt.png'
+import eth from '../assets/images/eth.png'
+import matic from '../assets/images/matic.png'
+import bnb from '../assets/images/bnb.png'
 
 
 export{
@@ -36,5 +40,9 @@ export{
     wanETH,
     wanBTC,
     arrow,
-    dots
+    dots,
+    usdt,
+    eth,
+    matic,
+    bnb
 }
